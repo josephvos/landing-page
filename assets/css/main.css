@@ -4109,3 +4109,25 @@ input, select, textarea {
 					}
 
 	}
+
+
+	.small-footer {
+		padding: 10px; /* Adjust the padding as needed */
+		font-size: 14px; /* Adjust the font size as needed */
+	  }
+	  
+	  .small-footer .icons {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	  }
+	  
+	  .small-footer .icons li {
+		display: inline-block;
+		margin: 0 5px; /* Adjust the margin between icons as needed */
+	  }
+	  
+	  .small-footer .icons a {
+		font-size: 16px; /* Adjust the icon size as needed */
+	  }
+	  
