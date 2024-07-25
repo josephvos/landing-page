@@ -4293,3 +4293,31 @@ body.landing::before {
 #titleBar, #navPanel {
 	display: none;
 }
+
+/* General reset or normalization */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Specific styling with browser prefixes */
+#titleBar, #navPanel {
+    display: none;
+    -webkit-display: none; /* Safari and older browsers */
+}
+
+/* Example of modifying properties */
+#titleBar {
+    background-color: transparent;
+    position: static;
+    -webkit-background-color: transparent; /* Safari */
+    -webkit-position: static; /* Safari */
+}
+
+#navPanel {
+    background-color: transparent;
+    position: static;
+    -webkit-background-color: transparent; /* Safari */
+    -webkit-position: static; /* Safari */
+}
