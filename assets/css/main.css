@@ -1547,12 +1547,15 @@ input, select, textarea {
 
 				.row > .col-12-medium {
 					width: 100%;
+					text-align: center;
 				}
 
 				.row > .off-12-medium {
 					margin-left: 100%;
 				}
-
+				.off-12-medium {
+					text-align: center;
+				  }
 				.row.gtr-0 {
 					margin-top: 0;
 					margin-left: 0em;
@@ -2184,15 +2187,14 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 	}
+	header.major2 {
+		
+		position: relative;
+		text-align: center;
+		
+	}
 
-		header.major:after {
-			background: #e44c65;
-			content: '';
-			display: inline-block;
-			height: 0.2em;
-			max-width: 20em;
-			width: 75%;
-		}
+	
 
 	footer.major {
 		margin: 4em 0 0 0;
@@ -3540,6 +3542,9 @@ input, select, textarea {
 		#footer .icons .icon.alt {
 			text-decoration: none;
 		}
+		.center-text {
+			text-align: center; /* Center text horizontally */
+		  }
 
 			#footer .icons .icon.alt:before {
 				-moz-osx-font-smoothing: grayscale;
@@ -4112,8 +4117,10 @@ input, select, textarea {
 
 
 	.small-footer {
-		padding: 10px; /* Adjust the padding as needed */
-		font-size: 14px; /* Adjust the font size as needed */
+		font-size: 14px; /* Adjust font size */
+		text-align: center; /* Center text horizontally */
+		padding: 10px; /* Add padding as needed */
+		background-color: #f1f1f1; /* Adjust background color */
 	  }
 	  
 	  .small-footer .icons {
@@ -4124,10 +4131,153 @@ input, select, textarea {
 	  
 	  .small-footer .icons li {
 		display: inline-block;
-		margin: 0 5px; /* Adjust the margin between icons as needed */
+		margin: 0 5px; /* Adjust spacing between icons */
 	  }
 	  
 	  .small-footer .icons a {
-		font-size: 16px; /* Adjust the icon size as needed */
+		font-size: 25px; /* Adjust icon size */
+		color: #333; /* Adjust icon color */
+	  }
+
+	  .center-text {
+		text-align: center; /* Center inline and inline-block elements */
 	  }
 	  
+	  .center-text .actions {
+		display: inline-flex; /* Use inline-flex to keep the container inline and apply flex properties */
+		justify-content: center; /* Center buttons horizontally */
+		padding: 0; /* Remove any default padding */
+		margin: 0; /* Remove any default margin */
+		list-style: none; /* Remove default list styling */
+	  }
+	  
+	  .center-text .actions li {
+		margin: 0 5px; /* Adjust spacing between buttons */
+	  }
+	  
+	  .center-text .button {
+		/* Optional: Add specific styling for buttons if needed */
+	  }
+
+	/* Ensure images fit within their container and have the same height */
+.image.fit2 img {
+	height: 275px; /* Set a fixed height for all images */
+	width: auto; /* Maintain aspect ratio */
+	object-fit: cover; /* Ensure the image covers the given dimensions */
+	display: block; /* Remove extra space below images */
+  }
+  
+  /* Optional: Control the container's size and alignment */
+  .col-4.col-6-xsmall {
+	display: flex;
+	justify-content: center; /* Center content horizontally */
+  }
+  
+  .image.fit2 {
+	overflow: hidden; /* Hide any overflow from images */
+  }
+
+  
+  
+  /* Optional: Control the container's size and alignment */
+  .col-4.col-6-xsmall {
+	display: flex;
+	justify-content: center; /* Center content horizontally */
+  }
+  
+  .image.fit3 {
+	overflow: hidden; /* Hide any overflow from images */
+  }
+
+  .image.fit3 img {
+	height: 275px; /* Set a fixed height */
+	width: auto; /* Maintain aspect ratio */
+	border-radius: 50%; /* Make the image circular */
+	display: block; /* Remove any extra space below the image */
+	object-fit: cover; /* Ensure the image covers the circle area properly */
+  }
+
+  .image.fit4 img {
+	height: 275px; /* Set a fixed height */
+	width: auto; /* Maintain aspect ratio */
+	display: block; /* Remove any extra space below the image */
+	
+  }
+  .col-4.col-6-xsmall {
+	display: flex; /* Ensure flex display for centering */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+  }
+  
+  .image.fit3 {
+	position: relative; /* For absolute positioning of the image */
+	width: 275px; /* Fixed width */
+	height: 275px; /* Fixed height */
+	overflow: hidden; /* Ensure circular clipping */
+	border-radius: 50%; /* Make the container circular */
+  }
+  
+  .image.fit3 img {
+	width: 100%; /* Ensure the image covers the container */
+	height: 100%; /* Ensure the image covers the container */
+	object-fit: cover; /* Ensure the image covers the circular area properly */
+	display: block; /* Remove any extra space below the image */
+  }
+
+  header.major3 {
+	position: relative;
+  }
+  
+  header.major3:after {
+	background: #e44c65;
+	content: '';
+	display: block; /* Change to block to better handle vertical alignment */
+	width: 0.2em; /* Make it thin for a vertical line */
+	height: 30em; /* Adjust the height as needed */
+	margin: 0 auto; /* Center the line horizontally */
+	position: absolute; /* Position absolutely within the header */
+	left: 50%; /* Center horizontally */
+	top: 0; /* Align with the top of the header */
+	transform: translateX(-50%); /* Adjust for the line's width */
+  }
+
+ 
+
+  .col-4.col-6-medium.col-12-xsmall {
+    position: relative; /* Required for positioning the pseudo-element */
+    border: 1px solid transparent; /* Transparent border for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+
+
+
+.col-4.col-6-medium.col-12-xsmall::after {
+    content: ''; /* Required to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    right: -28px; /* Moves the border 5 pixels to the right */
+    bottom: 0;
+    width: 5px; /* Width of the visual border */
+    background-color: hsl(350, 74%, 60%); /* Border color */
+    z-index: 1; /* Ensure it's on top of other content */
+}
+.col-4.col-6-medium.col-12-xsmall:last-child {
+    border-right: none; /* Removes the border */
+    padding-right: 0; /* Adjust padding to align with other items */
+	
+}
+
+
+/* Define the clickable-image class */
+.clickable-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease !important; /* Add color transition with !important */
+    color: #333 !important; /* Default color for the icons with !important */
+}
+
+/* Apply a scale effect on hover and change color */
+.clickable-image:hover {
+    transform: scale(1.1) !important; /* Scale the image up by 10% with !important */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add shadow effect with !important */
+    color: #e44c65 !important; /* Change icon color on hover with !important */
+}
