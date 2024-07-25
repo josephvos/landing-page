@@ -630,6 +630,7 @@ input, select, textarea {
 
 	}
 
+	
 /* Container */
 
 	.container {
@@ -4284,4 +4285,11 @@ input, select, textarea {
 
 .no-border {
     border: none !important;
+}
+
+body.landing::before {
+	display: none;
+}
+#titleBar, #navPanel {
+	display: none;
 }
