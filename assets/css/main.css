@@ -4252,11 +4252,11 @@ input, select, textarea {
 
 
 
-.col-4.col-6-medium.col-12-xsmall::after {
+.col-4.col-6-medium.col-12-xsmall:nth-child(-n+2)::after {
     content: ''; /* Required to display the pseudo-element */
     position: absolute;
     top: 0;
-    right: -28px; /* Moves the border 5 pixels to the right */
+    right: -28px; /* Moves the border to the right */
     bottom: 0;
     width: 5px; /* Width of the visual border */
     background-color: hsl(350, 74%, 60%); /* Border color */
@@ -4280,4 +4280,8 @@ input, select, textarea {
     transform: scale(1.1) !important; /* Scale the image up by 10% with !important */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add shadow effect with !important */
     color: #e44c65 !important; /* Change icon color on hover with !important */
+}
+
+.no-border {
+    border: none !important;
 }
