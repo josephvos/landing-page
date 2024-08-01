@@ -4321,3 +4321,9 @@ body.landing::before {
     -webkit-background-color: transparent; /* Safari */
     -webkit-position: static; /* Safari */
 }
+
+.with-red-line {
+    border-top: 3px solid red; /* Adjust the thickness and color as needed */
+    padding-top: 10px; /* Optional: add some padding to space the content from the line */
+}
+
