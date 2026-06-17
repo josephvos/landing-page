@@ -500,3 +500,30 @@ h3 {
     padding: 0.55rem 0.9rem;
   }
 }
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;         
+  overflow-x: auto;          
+  -webkit-overflow-scrolling: touch;
+}
+
+.icon-link {
+  flex: 0 0 auto;             
+  white-space: nowrap;       
+  min-width: 4.5rem;          
+  padding: 0.45rem 0.9rem;    
+  gap: 0.4rem;
+}
+
+.icon-link svg { margin-left: 0.4rem; margin-right: 0.4rem; }
+
+@media (max-width: 600px) {
+  h1 { font-size: clamp(1.8rem, 6vw, 2.25rem); }
+  .subtitle, .skills, .intro { font-size: 0.95rem; max-width: 20rem; }
+  .profile-photo { width: 9.5rem; }
+}
+
+.links::-webkit-scrollbar { height: 6px; }
+.links::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
