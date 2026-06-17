@@ -501,14 +501,6 @@ h3 {
   }
 }
 
-.links {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: nowrap;         
-  overflow-x: auto;          
-  -webkit-overflow-scrolling: touch;
-}
-
 .icon-link {
   flex: 0 0 auto;             
   white-space: nowrap;       
