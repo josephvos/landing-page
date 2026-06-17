@@ -387,7 +387,7 @@ h3 {
 	}
 
 	.links {
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 	.profile-photo {
@@ -520,10 +520,55 @@ h3 {
 .icon-link svg { margin-left: 0.4rem; margin-right: 0.4rem; }
 
 @media (max-width: 600px) {
-  h1 { font-size: clamp(1.8rem, 6vw, 2.25rem); }
-  .subtitle, .skills, .intro { font-size: 0.95rem; max-width: 20rem; }
-  .profile-photo { width: 9.5rem; }
-}
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.25rem);
+    text-align: center;
+  }
 
-.links::-webkit-scrollbar { height: 6px; }
-.links::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
+  .hero {
+    min-height: 100vh;
+    padding: 3.5rem 1rem 4rem;
+  }
+
+  .hero__content,
+  .hero__text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__content {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero__text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1,
+  .subtitle,
+  .skills,
+  .intro {
+    width: 100%;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-photo {
+    width: 9.5rem;
+    justify-self: center;
+  }
+
+  .links {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .subtitle,
+  .skills,
+  .intro {
+    font-size: 0.95rem;
+  }
+}
